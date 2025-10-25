@@ -30,15 +30,27 @@ body {
 /* Cabeçalho */
 .site-header {
   background: #191970;
-  color: #fff; /* texto em branco */
+  color: #fff;
   padding: 1rem 0;
   border-bottom: 1px solid #e6edf7;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .brand {
   margin: 0;
   font-size: 1.25rem;
-  color: #fff; /* título em branco */
+  color: #fff;
+}
+
+.brand a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Navegação */
@@ -47,18 +59,20 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav a {
-  color: #fff; /* links em branco */
+  color: #fff;
   text-decoration: none;
   padding: 0.35rem 0.5rem;
   border-radius: 6px;
+  display: inline-block;
 }
 
 .nav a:hover {
-  background: rgba(255, 255, 255, 0.1); /* leve destaque no hover */
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Acessibilidade */
@@ -124,11 +138,17 @@ input, select, textarea {
   margin-top: 0.25rem;
 }
 
-/* Grid */
+/* Grid — Mobile-first */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Botões e ações */
@@ -136,6 +156,7 @@ input, select, textarea {
   margin-top: 1rem;
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 button {
@@ -147,8 +168,12 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
 /* Rodapé */
-footer {
+.site-footer {
   padding: 1rem 0;
   background: #fafafa;
   border-top: 1px solid #eee;
