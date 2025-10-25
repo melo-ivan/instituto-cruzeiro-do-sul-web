@@ -29,7 +29,8 @@ body {
 
 /* Cabeçalho */
 .site-header {
-  background: #000080;
+  background: #191970;
+  color: #FFFAFA
   padding: 1rem 0;
   border-bottom: 1px solid #e6edf7;
 }
