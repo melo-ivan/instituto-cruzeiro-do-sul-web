@@ -168,6 +168,43 @@ article a:hover {
   text-decoration: underline;
 }
 
+/* Projetos — Layout lado a lado */
+.projeto-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.projeto-content {
+  order: 2;
+}
+
+.projeto-figura {
+  order: 1;
+}
+
+@media (min-width: 700px) {
+  .projeto-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projeto-content {
+    order: 2;
+  }
+
+  .projeto-figura {
+    order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projeto-card {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+  }
+}
+
 /* Figuras */
 figure {
   margin: 1rem 0;
@@ -186,6 +223,12 @@ figcaption {
   color: var(--muted);
   margin-top: 0.5rem;
   font-style: italic;
+}
+
+.projeto-figura img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Seção de Doações */
