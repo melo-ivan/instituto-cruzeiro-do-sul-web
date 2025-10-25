@@ -30,7 +30,7 @@ body {
 /* Cabeçalho */
 .site-header {
   background: #191970;
-  color: #FFFAFA;
+  color: #fff; /* texto em branco */
   padding: 1rem 0;
   border-bottom: 1px solid #e6edf7;
 }
@@ -38,6 +38,7 @@ body {
 .brand {
   margin: 0;
   font-size: 1.25rem;
+  color: #fff; /* título em branco */
 }
 
 /* Navegação */
@@ -50,10 +51,14 @@ body {
 }
 
 .nav a {
-  color: inherit;
+  color: #fff; /* links em branco */
   text-decoration: none;
   padding: 0.35rem 0.5rem;
   border-radius: 6px;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* leve destaque no hover */
 }
 
 /* Acessibilidade */
