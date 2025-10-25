@@ -175,7 +175,8 @@ button:hover {
 /* Rodapé */
 .site-footer {
   padding: 1rem 0;
-  background: #fafafa;
+  background: #191970;
+  color: #fff;
   border-top: 1px solid #eee;
   margin-top: 1.5rem;
   display: flex;
