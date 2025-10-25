@@ -10,7 +10,7 @@ Desenvolver a base estrutural de uma **plataforma web completa** para Organizaç
 
 ---
 
-## 🧩 Estrutura do Projeto  
+## Estrutura do Projeto  
 ├── index.html # Página inicial - missão, visão e contato
 ├── projetos.html # Página de projetos sociais e doações
 ├── cadastro.html # Página de cadastro de voluntários/doadores
